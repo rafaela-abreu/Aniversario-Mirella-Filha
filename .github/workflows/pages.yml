@@ -28,7 +28,7 @@ jobs:
       - name: Preparar somente arquivos públicos
         run: |
           mkdir -p "$RUNNER_TEMP/convite"
-          cp index.html 404.html favicon.svg icon.png manus-routes.json "$RUNNER_TEMP/convite/"
+          cp index.html 404.html convite-mirella-mamae.html favicon.svg icon.png manus-routes.json "$RUNNER_TEMP/convite/"
           cp -R assets media "$RUNNER_TEMP/convite/"
           touch "$RUNNER_TEMP/convite/.nojekyll"
       - name: Enviar arquivos do site
