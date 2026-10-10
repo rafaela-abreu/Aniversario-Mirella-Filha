@@ -1,0 +1,40 @@
+name: Publicar convite da Mirella
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter arquivos do convite
+        uses: actions/checkout@v4
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Preparar somente arquivos públicos
+        run: |
+          mkdir -p "$RUNNER_TEMP/convite"
+          cp index.html 404.html favicon.svg icon.png manus-routes.json "$RUNNER_TEMP/convite/"
+          cp -R assets media "$RUNNER_TEMP/convite/"
+          touch "$RUNNER_TEMP/convite/.nojekyll"
+      - name: Enviar arquivos do site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/convite
+      - name: Publicar convite
+        id: deployment
+        uses: actions/deploy-pages@v4
