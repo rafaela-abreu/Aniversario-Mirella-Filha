@@ -16,3 +16,9 @@ Tema lilás e branco, fonte Nunito arredondada, cartões arredondados, legenda c
 ## Hospedagem
 
 O frontend e as mídias ficam no GitHub Pages. O banco e as APIs ficam no servidor publicado https://mirella5-kun5e5rs.manus.space, com CORS limitado à origem https://rafaela-abreu.github.io. Os arquivos públicos não contêm credenciais nem listas de convidados.
+
+## Tipografia legível
+
+A fonte aplicada ao convite e às cartinhas é Fredoka variável, hospedada junto com o site. Os títulos usam peso 650; mensagens das cartinhas usam peso 600, 20px, preto e entrelinha 1,65, sem cursiva fina. Títulos e chamadas começam com maiúscula em vez de ficar inteiramente em caixa alta.
+
+Referências verificadas para a escolha: [Google Fonts — Fredoka](https://fonts.google.com/specimen/Fredoka), [Figma — Fredoka](https://www.figma.com/fonts/fredoka/) e [Pimp my Type — legibilidade e alternativas à Quicksand](https://pimpmytype.com/quicksand-alternatives/). Fredoka foi escolhida pelas formas arredondadas e encorpadas, verificadas em tela de celular e computador. A licença OFL está em fonts/Fredoka-OFL.txt.
