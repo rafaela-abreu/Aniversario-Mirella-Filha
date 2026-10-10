@@ -2,16 +2,17 @@
 
 Convite público: https://rafaela-abreu.github.io/Aniversario-Mirella-Filha/
 
-Tema lilás e branco, vídeo de fundo sem cachorro por reenquadramento, loop vai-e-volta, imagem de segurança, vídeo personalizado, música enviada pela família, ursinha arrastável com risadinha, fotos de família e presentes.
+## Funções
 
-A confirmação de presença abre mensagem pronta no WhatsApp da mamãe. A pessoa precisa apertar Enviar no WhatsApp para concluir. Cartinhas compartilhadas e painel privado aguardam ativação de servidor separado; não usam armazenamento local para simular um mural público.
+- Cartinhas salvas em banco de dados e exibidas publicamente no mural, com nome e mensagem. O mural se atualiza após o envio e a cada 20 segundos enquanto o site está aberto.
+- Confirmação de presença salva na lista privada dos responsáveis, com opção de avisar a mamãe por WhatsApp. Nenhuma lista de convidados é pública.
+- Área dos responsáveis: https://mirella5-kun5e5rs.manus.space/familia — exige a conta autorizada da dona do convite.
+- Data, horário e local vêm do servidor e podem ser editados no painel.
 
-Os arquivos publicados não contêm credenciais nem listas de convidados.
+## Visual e mídia
 
-## Revisão de legibilidade e fidelidade
+Tema lilás e branco, fonte Nunito arredondada, cartões arredondados, legenda com contraste melhorado e barra superior removida. Fundo sem cachorro por reenquadramento, loop contínuo e imagem de segurança. Vídeo principal da foto original com movimento de câmera, sem recriação do rosto. Música enviada pela família, ursinha arrastável com risadinha em volume moderado e galeria inclinada de família em loop mais ágil.
 
-Fonte Montserrat mais encorpada com textos pretos, contornos firmes e painéis claros sobre o vídeo de fundo mais vivo. Vídeo principal substituído pela própria foto fornecida, animada apenas com movimento de câmera suave, sem recriar rosto ou corpo por IA. Risadinha ajustada para volume moderado de 52%.
+## Hospedagem
 
-## Acabamento arredondado
-
-Fonte Nunito arredondada e firme, sem contorno grosseiro. Blocos de texto com cantos de 24–26px, margens consistentes, cartões e fotografias sem inclinações.
+O frontend e as mídias ficam no GitHub Pages. O banco e as APIs ficam no servidor publicado https://mirella5-kun5e5rs.manus.space, com CORS limitado à origem https://rafaela-abreu.github.io. Os arquivos públicos não contêm credenciais nem listas de convidados.
